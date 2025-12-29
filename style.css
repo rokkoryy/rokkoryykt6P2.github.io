@@ -1,0 +1,37 @@
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+}
+
+.block-wrapper {
+    width: 1000px;
+    height: fit-content;
+
+    display: grid;
+    grid-auto-flow: dense;
+    gap: 10px;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.block {
+    background-color: #000;
+    height: 125px;
+}
+
+.small {
+    background-color: #ddd8da;
+}
+
+.mid {
+    background-color: #ffcc00;
+    grid-column: span 2;
+    height: 125px;
+}
+
+.big {
+    background-color: #a7451e;
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 260px;
+}
